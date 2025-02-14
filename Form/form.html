@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">Enter your first name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Enter your last name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Enter your mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Enter your address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Select your gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Select your hobbies:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hobby1" name="hobbies" value="hobby1">
+                    <label for="hobby1">Hobby 1</label>
+                    <input type="checkbox" id="hobby2" name="hobbies" value="hobby2">
+                    <label for="hobby2">Hobby 2</label>
+                    <input type="checkbox" id="hobby3" name="hobbies" value="hobby3">
+                    <label for="hobby3">Hobby 3</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Select your DOB:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Select your country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="profile-pic">Upload your pic:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            </div>
+
+            <div class="form-group button-group">
+                <button type="submit">Save My Data</button>
+                <button type="reset">Reset Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
