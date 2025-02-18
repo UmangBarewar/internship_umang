@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Coupon</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .flex {
+      max-width: 400px;
+      width: 90%;
+      margin: 0 auto;
+      border: 2px dashed #ff6f61;
+      border-radius: 15px;
+      padding: 25px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .flex:hover {
+      transform: scale(1.05);
+    }
+    .coupon img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .coupon h1 {
+      font-size: 24px;
+      margin: 15px 0;
+      font-weight: bold;
+      color: #333;
+    }
+    .coupon p {
+      font-size: 16px;
+      color: #555;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    .promo-code {
+      font-weight: bold;
+      color: #fff;
+      background-color: #ff6f61;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 20px;
+      margin: 15px 0;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    .expires {
+      font-size: 14px;
+      color: #d9534f;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .company-logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <p class="company-logo">Company Logo</p>
+    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg" alt="Burger Image">
+    <h1>20% OFF YOUR PURCHASE</h1>
+    <p>A hamburger, or simply a burger, is a dish consisting of fillings usually a patty of ground meat, typically beef placed inside a sliced bun or bread roll.</p>
+    <p>Use Promo Code: <span class="promo-code">BO786</span></p>
+    <p class="expires">Expires: Jan 03, 2021</p>
+  </div>
+</body>
+</html>
