@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Explained</title>
+    <style>
+        .descendant p {
+            color: blue;
+        }
+
+        .child > p {
+            color: green;
+        }
+
+        .adjacent + p {
+            color: red;
+            font-weight: bold;
+        }
+
+        .general ~ p {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        .box {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px dashed gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Combinators Explained</h1>
+
+    <div class="container descendant">
+        <h2>Descendant Combinator (space)</h2>
+        <div class="box">
+            <p>This paragraph inside .descendant div is affected.</p>
+            <div>
+                <p>This nested paragraph is also affected.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container child">
+        <h2>Child Combinator (>)</h2>
+        <div class="box">
+            <p>This paragraph inside .child div is affected.</p>
+            <div>
+                <p>This nested paragraph is NOT affected.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Adjacent Sibling Combinator (+)</h2>
+        <div class="box adjacent">This is the reference div.</div>
+        <p>This paragraph is right next to the div.</p>
+        <p>This paragraph is NOT directly after, so it's not affected.</p>
+    </div>
+
+    <div class="container">
+        <h2>General Sibling Combinator (~)</h2>
+        <div class="box general">This is the reference div.</div>
+        <p>This paragraph comes after the div.</p>
+        <p>This one also gets affected.</p>
+    </div>
+
+</body>
+</html>
